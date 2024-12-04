@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Mantenimiento</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Lucida Sans', sans-serif, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 254, 254, 0.1);
+            text-align: left;
+            width: 300px;
+        }
+        h1 {
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #555;
+        }
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Alta de reporte</h1>
+        <form>
+            <label for="descripcion">Nombre del Solicitante:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" placeholder="" required></textarea>
+            
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <label for="hora">Hora en la se genera el reporte:</label>
+            <input type="time" id="hora" name="hora" required>
+
+            <label for="opciones">Seleccionar opción:</label>
+            <select id="opciones" name="opciones">
+                <option value="opcion3">Ventilador SV300</option>
+                <option value="opcion3">Ventilador SV800</option>
+                <option value="opcion1">Monitor de Signos Vitaes</option>
+                <option value="opcion2">Cama Hospitalaria</option>
+                <option value="opcion3">Desfibrilador</option>
+                <option value="opcion3">Bomba Infusomat</option>
+                <option value="opcion3">Bomba Compact Plus</option>
+                <option value="opcion3">Humidificador</option>
+                <option value="opcion3">Electrocardiográfo</option>
+                <option value="opcion3">Módulo de Capnografía</option>
+                
+            </select>
+
+            <label for="descripcion">No. Identeficación Mac:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" placeholder="" required></textarea>
+            <label for="descripcion">Descripción de la falla:</label>
+            <textarea id="descripcion" name="descripcion" rows="4" placeholder="" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+    </div>
+</body>
+</html>
